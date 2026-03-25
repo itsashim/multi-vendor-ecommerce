@@ -1,8 +1,9 @@
 import NavbarHeader from "@/components/nab-bar"
 import { ReactNode } from "react"
 
-interface Props {
-    children?: ReactNode
+
+interface Props extends React.HTMLAttributes<HTMLDivElement> {
+    children?: ReactNode;
 }
 
 function FrontLayout({ children, ...props }: Props) {
